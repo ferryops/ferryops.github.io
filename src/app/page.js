@@ -1,5 +1,5 @@
-import Navigation from "@/components/navigation";
-import { Typography } from "@/components/Typography";
+import Navigation from "@/components/own/navigation";
+import { Typography } from "@/components/own/typography";
 
 export default function Home() {
   return (
