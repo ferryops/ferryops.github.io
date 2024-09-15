@@ -26,7 +26,7 @@ export const WorkExperience = () => {
             }}
           >
             <div className="flex gap-2 items-center py-2">
-              <Image src={item.icon} alt={item.company} width={24} height={24} className="rounded-full py-4" />
+              <Image src={item.icon} alt={item.company} width={24} height={24} className="rounded-full py-4 hover:scale-150" />
               <Typography variant="p" size="sm">
                 {item.company}
               </Typography>

@@ -10,8 +10,8 @@ export default function Home() {
           Full Stack Developer yang lagi belajar ngoding.
         </Typography>
         <Typography variant="p" size="sm" className="leading-relaxed tracking-wide">
-          "Tidak ada waktu untuk mencari tahu apakah ini hal yang tepat untuk dilakukan! Teruslah bergerak - jangan mencoba
-          menjaga tanganmu bersih. Memang benar, dunia ini begitu kejam." - Ujar Eren Yeager
+          &quot;Tidak ada waktu untuk mencari tahu apakah ini hal yang tepat untuk dilakukan! Teruslah bergerak - jangan mencoba
+          menjaga tanganmu bersih. Memang benar, dunia ini begitu kejam.&quot; - Ujar Eren Yeager
         </Typography>
       </div>
       <div className="flex flex-col w-full gap-6">

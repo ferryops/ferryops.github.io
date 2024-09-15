@@ -32,7 +32,7 @@ const web = {
   workExperienceItem: [
     {
       id: 1,
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
+      icon: "/logo/minergo.svg",
       title: "Full Stack Developer",
       company: "PT Minergo Visi Maxima",
       location: "Balikpapan, Indonesia",
@@ -48,7 +48,7 @@ const web = {
     },
     {
       id: 2,
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
+      icon: "/logo/mka.jpeg",
       title: "Full Stack Developer",
       company: "PT Media Kreasi Abadi",
       location: "Balikpapan, Indonesia",
@@ -64,7 +64,7 @@ const web = {
     },
     {
       id: 3,
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
+      icon: "/logo/kominfo.png",
       title: "Cyber Security Analyst",
       company: "Kominfo",
       location: "Jakarta, Indonesia",
@@ -81,7 +81,7 @@ const web = {
     },
     {
       id: 4,
-      icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
+      icon: "/logo/telkom.png",
       title: "Backend Developer",
       company: "PT Telkom Regional VI Kalimantan",
       location: "Balikpapan, Indonesia",
