@@ -33,6 +33,9 @@ export default function Blog() {
         <Typography variant="h2" size="md" className="tracking-wide">
           Blog
         </Typography>
+        <Typography variant="p" size="sm" className="leading-relaxed tracking-wide">
+          Menulis adalah salah satu cara untuk mengekspresikan diri dan mengingat apa saja yang telah saya pelajari.
+        </Typography>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
           {articles.map((item) => (
             <Card

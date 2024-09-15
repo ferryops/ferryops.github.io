@@ -28,6 +28,10 @@ export default function Home() {
         <Typography variant="h2" size="md" className="tracking-wide">
           Kontribusi Terbaru
         </Typography>
+        <Typography variant="p" size="sm" className="leading-relaxed tracking-wide">
+          Selain bekerja di perusahaan, saya juga aktif di beberapa project baik secara individu maupun tim. Berikut adalah
+          kontribusi terbaru yang saya lakukan.
+        </Typography>
         <ListRepo limit={9} />
       </div>
     </div>
