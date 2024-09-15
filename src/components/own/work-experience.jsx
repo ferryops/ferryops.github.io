@@ -4,17 +4,23 @@ import Image from "next/image";
 import { Typography } from "./typography";
 import { Button } from "../ui/button";
 import { useState } from "react";
+import web from "@/constants/web";
 
 export const WorkExperience = () => {
   const [selectedItem, setSelectedItem] = useState(1);
   return (
     <div className="flex gap-4 flex-col md:flex-row">
-      <div id="left" className="flex gap-4 flex-col items-start w-full md:w-auto">
-        {WorkExperienceItem.map((item) => (
+      <div
+        id="left"
+        className="flex gap-4 flex-row items-start w-full md:w-[500px] md:flex-col overflow-x-auto overflow-y-hidden scrollbar-hide"
+      >
+        {web.workExperienceItem.map((item) => (
           <Button
             variant="ghost"
             key={item.company}
-            className={`flex gap-1 items-center w-full justify-start ${selectedItem === item.id ? "bg-accent" : ""}`}
+            className={`flex-shrink-0 flex gap-1 items-center justify-start ${
+              selectedItem === item.id ? "bg-accent" : ""
+            } md:w-full`}
             onClick={() => {
               setSelectedItem(item.id);
             }}
@@ -29,65 +35,23 @@ export const WorkExperience = () => {
         ))}
       </div>
       <div id="right" className="w-full">
-        <div>
-          <Typography variant="h3" size="sm">
-            {WorkExperienceItem[selectedItem - 1].title} @ {WorkExperienceItem[selectedItem - 1].company}
-          </Typography>
-          <Typography variant="p" size="sm">
-            {WorkExperienceItem[selectedItem - 1].description}
-          </Typography>
-          <Typography variant="p" size="sm">
-            {WorkExperienceItem[selectedItem - 1].date}
-          </Typography>
-          <Typography variant="ul" size="sm">
-            {WorkExperienceItem[selectedItem - 1].details.map((detail, index) => (
-              <Typography variant="li" size="sm" key={index}>
-                {detail}
-              </Typography>
-            ))}
-          </Typography>
-        </div>
+        <Typography variant="h3" size="sm" className="mb-2">
+          {web.workExperienceItem[selectedItem - 1].title} @ {web.workExperienceItem[selectedItem - 1].company}
+        </Typography>
+        <Typography variant="p" size="sm">
+          {web.workExperienceItem[selectedItem - 1].description}
+        </Typography>
+        <Typography variant="p" size="sm">
+          {web.workExperienceItem[selectedItem - 1].date}
+        </Typography>
+        <Typography variant="ul" size="sm">
+          {web.workExperienceItem[selectedItem - 1].details.map((detail, index) => (
+            <Typography variant="li" size="sm" key={index}>
+              {detail}
+            </Typography>
+          ))}
+        </Typography>
       </div>
     </div>
   );
 };
-
-const WorkExperienceItem = [
-  {
-    id: 1,
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
-    title: "Software Engineer",
-    company: "Google",
-    location: "San Francisco, CA",
-    date: "Jan 2022 - Present",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    id: 2,
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
-    title: "Software Engineer",
-    company: "Netflix",
-    location: "San Francisco, CA",
-    date: "Jan 2022 - Present",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    ],
-  },
-  {
-    id: 3,
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/36px-Google_%22G%22_logo.svg.png",
-    title: "Software Engineer",
-    company: "Amazon",
-    location: "San Francisco, CA",
-    date: "Jan 2022 - Present",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    details: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
-  },
-];

@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import web from "@/constants/web";
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,9 +15,9 @@ export default function Navigation() {
       {/* Navigation Desktop */}
       <nav className="hidden md:flex justify-between items-center p-4">
         <ul className="flex gap-4 items-center">
-          {NavigationItem.map((item) => (
+          {web.navigationItem.map((item) => (
             <li key={item.name}>
-              <Link href={item.href} className="hover:bg-muted p-2 rounded-md">
+              <Link href={item.href} className={`hover:bg-muted p-2 rounded-md ${pathname === item.href ? "bg-accent" : ""}`}>
                 {item.name}
               </Link>
             </li>
@@ -33,9 +36,9 @@ export default function Navigation() {
             <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
               {isOpen ? "✕" : "☰"}
             </button>
-            {NavigationItem.map((item) => (
+            {web.navigationItem.map((item) => (
               <li key={item.name} className="mb-2">
-                <Link href={item.href} className="block hover:bg-muted p-2 rounded-md">
+                <Link href={item.href} className="block hover:bg-muted p-2 rounded-md" onClick={() => setIsOpen(false)}>
                   {item.name}
                 </Link>
               </li>
@@ -47,18 +50,3 @@ export default function Navigation() {
     </div>
   );
 }
-
-const NavigationItem = [
-  {
-    name: "Home",
-    href: "/",
-  },
-  {
-    name: "About",
-    href: "/about",
-  },
-  {
-    name: "Contact",
-    href: "/contact",
-  },
-];

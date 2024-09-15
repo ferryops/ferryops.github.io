@@ -1,34 +1,35 @@
 import ListRepo from "@/components/own/list-repo";
-import Navigation from "@/components/own/navigation";
 import { Typography } from "@/components/own/typography";
 import { WorkExperience } from "@/components/own/work-experience";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center w-full">
-      <Navigation />
-      <div className="flex flex-col w-full gap-24">
-        <div className="flex flex-col w-full gap-12">
-          <Typography variant="h2" size="md" className="md:max-w-3xl tracking-wide">
-            I am a software engineer that rarely writes code.
-          </Typography>
-          <Typography variant="p" size="sm" className="md:max-w-3xl leading-relaxed tracking-wide">
-            Meet Manu Arora, the self-proclaimed code wizard who can turn caffeine into beautiful websites. His passion for
-            building clean and functional designs is only rivaled by his passion for finding the perfect GIF to express his
-            excitement.
-          </Typography>
-        </div>
-        <div className="flex flex-col w-full gap-12">
-          <Typography variant="h2" size="md" className="md:max-w-3xl tracking-wide">
-            Work Experience
-          </Typography>
-          <Typography variant="p" size="sm" className="md:max-w-3xl leading-relaxed tracking-wide">
-            I have worked with a variety of technologies and frameworks, including React, Next.js, Tailwind CSS, and MongoDB.
-          </Typography>
-          <WorkExperience />
-        </div>
+    <div className="flex flex-col items-center w-full md:w-[50vw] gap-12">
+      <div className="flex flex-col w-full gap-6">
+        <Typography variant="h2" size="md" className="tracking-wide">
+          Full Stack Developer yang lagi belajar ngoding.
+        </Typography>
+        <Typography variant="p" size="sm" className="leading-relaxed tracking-wide">
+          "Tidak ada waktu untuk mencari tahu apakah ini hal yang tepat untuk dilakukan! Teruslah bergerak - jangan mencoba
+          menjaga tanganmu bersih. Memang benar, dunia ini begitu kejam." - Ujar Eren Yeager
+        </Typography>
       </div>
-      <ListRepo />
+      <div className="flex flex-col w-full gap-6">
+        <Typography variant="h2" size="md" className="tracking-wide">
+          Pengalaman Kerja
+        </Typography>
+        <Typography variant="p" size="sm" className="leading-relaxed tracking-wide">
+          Betul kata pepatah, pengalaman adalah guru terbaik. Berikut ini adalah tempat yang pernah saya lewati dan telah
+          membentuk saya menjadi Ferry seperti sekarang.
+        </Typography>
+        <WorkExperience />
+      </div>
+      <div className="flex flex-col w-full gap-6">
+        <Typography variant="h2" size="md" className="tracking-wide">
+          Kontribusi Terbaru
+        </Typography>
+        <ListRepo limit={9} />
+      </div>
     </div>
   );
 }
