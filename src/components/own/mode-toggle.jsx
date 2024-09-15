@@ -20,9 +20,30 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>Terang</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>Gelap</DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>Ngikut Sistem</DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("light");
+            alert("🤨Sikopat orang ini");
+          }}
+        >
+          Terang
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("dark");
+            alert("🤩Nice, mode gelap baik untuk mata Anda!");
+          }}
+        >
+          Gelap
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("system");
+            alert("😏Ngikut Sistem Anda aja deh");
+          }}
+        >
+          Ngikut Sistem
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
