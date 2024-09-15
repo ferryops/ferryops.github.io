@@ -1,4 +1,4 @@
-import { Typography } from "@/components/Typography";
+import { Typography } from "@/components/own/typography";
 
 export default function Example() {
   return (
