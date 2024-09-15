@@ -68,7 +68,7 @@ const web = {
       title: "Cyber Security Analyst",
       company: "Kominfo",
       location: "Jakarta, Indonesia",
-      date: "April 2022 - Juli 2022",
+      date: "Agustus 2022 - Januari 2023",
       description: "Internship",
       details: [
         "Berkesempatan magang dalam program kampus merdeka batch 3 Kemendikbudristek.",
@@ -85,7 +85,7 @@ const web = {
       title: "Backend Developer",
       company: "PT Telkom Regional VI Kalimantan",
       location: "Balikpapan, Indonesia",
-      date: "Jan 2022 - Present",
+      date: "April 2022 - Juli 2022",
       description: "Internship",
       details: [
         "Berkesempatan magang dalam program Digitalent Regional Internship batch 3.",
