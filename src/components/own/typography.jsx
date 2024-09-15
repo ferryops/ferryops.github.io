@@ -9,10 +9,10 @@ export function Typography({ variant = "p", size = "md", children, className, ..
     h4: "scroll-m-20 font-semibold",
     h5: "scroll-m-20 font-semibold",
     h6: "scroll-m-20 font-semibold",
-    p: "leading-7",
+    p: "leading-7 dark:text-[#97979e]",
     blockquote: "mt-6 border-l-2 pl-6 italic",
-    ul: "my-6 ml-6 list-disc",
-    ol: "my-6 ml-6 list-decimal",
+    ul: "my-6 ml-6 list-disc dark:text-[#97979e]",
+    ol: "my-6 ml-6 list-decimal dark:text-[#97979e]",
     code: "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold",
   };
   const sizes = {
