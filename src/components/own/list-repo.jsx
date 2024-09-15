@@ -7,6 +7,7 @@ export default function ListRepo({ limit = 1000 }) {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState();
+
   const fetchRepos = async () => {
     setLoading(true);
     try {
@@ -14,7 +15,6 @@ export default function ListRepo({ limit = 1000 }) {
       const data = await response.json();
       setRepos(data);
     } catch (error) {
-      console.log({ error });
       console.error(error);
       setError(error);
     } finally {
@@ -33,7 +33,13 @@ export default function ListRepo({ limit = 1000 }) {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
       {repos?.length > 0 &&
         repos?.slice(0, limit).map((repo) => (
-          <Card key={repo.id} className="w-full">
+          <Card
+            key={repo.id}
+            className="w-full hover:bg-accent hover:cursor-pointer"
+            onClick={() => {
+              window.open(repo.html_url, "_blank");
+            }}
+          >
             <CardHeader>
               <CardTitle>{repo.name}</CardTitle>
               <CardDescription>{repo.description}</CardDescription>
