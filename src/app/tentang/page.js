@@ -10,6 +10,10 @@ export default function Tentang() {
 
 const dataTimeline = [
   {
+    title: "2025",
+    content: "Lead Developer di Minergo Systems",
+  },
+  {
     title: "2024",
     content: "Fulltime di Minergo Systems dan freelance",
   },
@@ -20,11 +24,13 @@ const dataTimeline = [
   },
   {
     title: "2022",
-    content: "Mulai aktif mengikuti kegiatan diluar kampus, magang di Telkom Regional VI Kalimantan dan Kominfo",
+    content:
+      "Mulai aktif mengikuti kegiatan diluar kampus, magang di Telkom Regional VI Kalimantan dan Kominfo",
   },
   {
     title: "2021",
-    content: "Tidak jauh berbeda dengan tahun sebelumnya, saya masih bergelut dengan kegiatan kampus",
+    content:
+      "Tidak jauh berbeda dengan tahun sebelumnya, saya masih bergelut dengan kegiatan kampus",
   },
   {
     title: "2020",
@@ -33,6 +39,7 @@ const dataTimeline = [
   },
   {
     title: "2019",
-    content: "Lulus dari SMA Negeri 1 Karau Kuala dan melanjutkan kuliah di Universitas Mulia",
+    content:
+      "Lulus dari SMA Negeri 1 Karau Kuala dan melanjutkan kuliah di Universitas Mulia",
   },
 ];

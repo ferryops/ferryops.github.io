@@ -33,17 +33,16 @@ const web = {
     {
       id: 1,
       icon: "/logo/minergo.svg",
-      title: "Full Stack Developer",
+      title: "Lead Developer",
       company: "PT Minergo Visi Maxima",
       location: "Balikpapan, Indonesia",
       date: "Agustus 2023 - Sekarang",
-      description: "Full Time",
+      description: "Kontrak",
       details: [
-        "Membuat dashboard dispatch untuk manajemen dan monitoring armada hauler serta laporan aktivitas pertambangan.",
-        "Mengintegrasikan berbagai layanan IoT ke website (kamera live streaming, websocket event driver, history perjalanan driver dan laporan aktivitas lainnya).",
-        "Melakukan riset telematika dan IoT untuk industri pertambangan.",
-        "Melakukan deployment proyek di PT. Borneo Indobara mulai dari Proof of Concept, integrasi dengan produk yang sedang berjalan hingga rilis.",
-        "Teknologi yang digunakan: React.js, Express.js, Node.js, MySQL",
+        "Februari 2025 - Sekarang, sebagai Lead Developer. Memimpin tim pengembang lintas fungsi dengan memberikan arahan teknis, mentoring, serta dukungan untuk memastikan deliverables berkualitas tinggi. Bertanggung jawab atas perencanaan sprint, code review, dan pengambilan keputusan arsitektur. Bekerja sama erat dengan manajer produk, QA, dan stakeholder untuk menyelaraskan pengembangan dengan tujuan bisnis. Mendorong inovasi teknis dan perbaikan proses untuk meningkatkan produktivitas dan kualitas perangkat lunak.",
+        "September 2024 - Februari 2025, sebagai Fullstack Developer. Bertanggung jawab dalam pengembangan profil perusahaan, analisis kebutuhan bisnis dan teknis, serta review desain, kode, dan pengujian. Membangun API dan layanan web untuk integrasi pihak ketiga. Pengembangan aplikasi menggunakan MySQL, deployment dengan Kubernetes, NGINX, dan PM2. Implementasi keamanan menggunakan JWT, Authy, dan bcrypt. Mengintegrasikan RabbitMQ untuk message brokering dan perangkat telematika. Terlibat dalam integrasi sistem bisnis dengan vendor, serta pengelolaan pipeline CI/CD menggunakan GitHub Actions dan Jenkins untuk aplikasi Node.js dan React. Proyek: Famous, Minergosystems, Banti, dan Banti Power Indonesia.",
+        "Agustus 2023 - September 2024, sebagai Junior Fullstack Developer. Merancang dan mengoptimalkan antarmuka web responsif untuk meningkatkan pengalaman pengguna. Mengembangkan dan mengelola RESTful API, serta integrasi sistem dan layanan pihak ketiga menggunakan berbagai protokol. Menggunakan teknologi seperti React.js, Express.js, dan lainnya.",
+        "Berpengalaman dalam pengembangan dan perencanaan aplikasi untuk industri pertambangan, baik dari sisi frontend maupun backend, serta menerapkan praktik terbaik dalam rekayasa perangkat lunak dan metodologi Agile.",
       ],
     },
     {
@@ -53,7 +52,7 @@ const web = {
       company: "PT Media Kreasi Abadi",
       location: "Balikpapan, Indonesia",
       date: "Februari 2022 - Juni 2023",
-      description: "Internship",
+      description: "Magang",
       details: [
         "Berkesempatan magang dalam program kampus merdeka batch 4 Kemendikbudristek.",
         "Membuat user interface dengan React.js dan Native CSS.",
@@ -69,7 +68,7 @@ const web = {
       company: "Kominfo",
       location: "Jakarta, Indonesia",
       date: "Agustus 2022 - Januari 2023",
-      description: "Internship",
+      description: "Magang",
       details: [
         "Berkesempatan magang dalam program kampus merdeka batch 3 Kemendikbudristek.",
         "Menganalisis jaringan komputer skala kecil dan menengah.",
@@ -86,7 +85,7 @@ const web = {
       company: "PT Telkom Regional VI Kalimantan",
       location: "Balikpapan, Indonesia",
       date: "April 2022 - Juli 2022",
-      description: "Internship",
+      description: "Magang",
       details: [
         "Berkesempatan magang dalam program Digitalent Regional Internship batch 3.",
         "Belajar dan membuat dashboard website dengan PHP, HTML dan CSS.",
